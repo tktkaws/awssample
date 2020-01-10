@@ -44,7 +44,6 @@ group :development, :test do
   gem 'capistrano-rails'
   gem 'capistrano-rbenv'
   gem 'capistrano3-unicorn'
-  gem 'capistrano-rvm'
 end
 
 group :development do
