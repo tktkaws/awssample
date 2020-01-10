@@ -65,3 +65,7 @@ namespace :deploy do
     end
   end
 end
+
+set :rvm_ruby_version, '1.9.3-p448'
+set :default_env, { rvm_bin_path: '~/.rvm/bin' }
+SSHKit.config.command_map[:rake] = "#{fetch(:default_env)[:rvm_bin_path]}/rvm ruby-#{fetch(:rvm_ruby_version)} do bundle exec rake"
