@@ -6,7 +6,7 @@ set :application, 'awssample'
 
 # cloneするgitのレポジトリ
 # （xxxxxxxx：ユーザ名、yyyyyyyy：アプリケーション名）
-set :repo_url, 'https://github.com/takayuki-takahashi-dic/awssample'
+set :repo_url, 'https://github.com/takayuki-takahashi-dic/awssample/awssample'
 
 # deployするブランチ。デフォルトはmasterなのでなくても可。
 set :branch, ENV['BRANCH'] || 'master'
